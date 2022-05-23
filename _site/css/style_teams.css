@@ -1,0 +1,565 @@
+
+        .GL .team__score::after {
+            content: "53/120"
+        }
+        .GL .team__stations::after {
+            content: "6/12"
+        }
+        .GL .team__bonus::after {
+            content: "4/36"
+        }
+        .GL .team__logo {
+            background-color: #bde0fe
+        }
+        .GL {
+            order: 16
+        }
+        .GL .team__all-points::after{
+            content: "57"
+        }
+        
+        .O .team__score::after {
+            content: "61/120"
+        }
+        .O .team__stations::after {
+            content: "8/12"
+        }
+        .O .team__bonus::after {
+            content: "5/36"
+        }
+        .O .team__logo {
+            background-color: #daeaf6
+        }
+        .O {
+            order: 12
+        }
+        .O .team__all-points::after{ 
+            content: " 66"
+        }
+
+
+        .Z .team__score::after {
+            content: "60/120"
+        }
+        .Z .team__stations::after {
+            content: "8/12"
+        }
+        .Z .team__bonus::after {
+            content: "5/36"
+        }
+        .Z .team__logo {
+            background-color: #9bd0b7
+        }
+        .Z {
+            order: 13
+        }
+        .Z .team__all-points::after{
+            content: "65"
+        }
+
+
+
+        .M .team__score::after {
+            content: "20/120"
+        }
+        .M .team__stations::after {
+            content: "3/12"
+        }
+        .M .team__bonus::after {
+            content: "0/36"
+        }
+        .M .team__logo {
+            background-color: #c23a22
+        }
+        .M {
+            order: 23
+        }
+        .M .team__all-points::after{
+            content: "20 "
+        }
+
+
+        .DS .team__score::after {
+            content: "68/120"
+        }
+        .DS .team__stations::after {
+            content: "8/12"
+        }
+        .DS .team__bonus::after {
+            content: "6/36"
+        }
+        .DS .team__logo {
+            background-color: #dab894
+        }
+        .DS {
+            order: 8
+        }
+        .DS .team__all-points::after{
+            content: "74"
+        }
+        
+
+        .DU .team__score::after {
+            content: "55/120"
+        }
+        .DU .team__stations::after {
+            content: "7/12"
+        }
+        .DU .team__bonus::after {
+            content: "8/36"
+        }
+        .DU .team__logo {
+            background-color: #d6eadf
+        }
+        .DU {
+            order: 14
+        }
+        .DU .team__all-points::after{
+            content: "63"
+        }
+
+
+
+        .OT .team__score::after {
+            content: "82/120"
+        }
+        .OT .team__stations::after {
+            content: "9/12"
+        }
+        .OT .team__bonus::after {
+            content: "5/36"
+        }
+        .OT .team__logo {
+            background-color: #957DAD
+        }
+        .OT {
+            order: 1
+        }
+        .OT .team__all-points::after{
+            content: " 87"
+        }
+
+
+
+        .GG .team__score::after {
+            content: "43/120"
+        }
+        .GG .team__stations::after {
+            content: "7/12"
+        }
+        .GG .team__bonus::after {
+            content: "7/36"
+        }
+        .GG .team__logo {
+            background-color: #E0BBE4
+        }
+        .GG {
+            order: 18
+        }
+        .GG .team__all-points::after{
+             content: "50"
+        }
+
+
+        .CH .team__score::after {
+            content: "20/120"
+        }
+        .CH .team__stations::after {
+            content: "3/12"
+        }
+        .CH .team__bonus::after {
+            content: "0/36"
+        }
+        .CH .team__logo {
+            background-color: #d291bc
+        }
+        .CH {
+            order: 24
+        }
+        .CH .team__all-points::after{
+            content: "20"
+        }
+
+
+        .GO .team__score::after {
+            content: "60/120"
+        }
+        .GO .team__stations::after {
+            content: "7/12"
+        }
+        .GO .team__bonus::after {
+            content: "7/36"
+        }
+        .GO .team__logo {
+            background-color: #c2d5a8
+        }
+        .GO {
+            order: 11
+        }
+        .GO .team__all-points::after{
+            content: "67"
+        }
+
+
+        .GV .team__score::after {
+            content: "59/120"
+        }
+        .GV .team__stations::after {
+            content: "7/12"
+        }
+        .GV .team__bonus::after {
+            content: "10/36"
+        }
+        .GV .team__logo {
+            background-color: #ffdfdc
+        }
+        .GV {
+            order: 10
+        }
+        .GV .team__all-points::after{
+            content: "69"
+        }
+
+
+        .SC .team__score::after {
+            content: "73/120"
+        }
+        .SC .team__stations::after {
+            content: "9/12"
+        }
+        .SC .team__bonus::after {
+            content: "10/36"
+        }
+        .SC .team__logo {
+            background-color: #9d8189
+        }
+        .SC {
+            order: 2
+        }
+        .SC .team__all-points::after{
+            content: "83"
+        }
+
+
+        .V .team__score::after {
+            content: "20/120"
+        }
+        .V .team__stations::after {
+            content: "3/12"
+        }
+        .V .team__bonus::after {
+            content: "0/36"
+        }
+        .V .team__logo {
+            background-color: #cccccc
+        }
+        .V {
+            order: 26
+        }
+        .V .team__all-points::after{
+            content: "20"
+        }
+
+
+        .MK .team__score::after {
+            content: "56/120"
+        }
+        .MK .team__stations::after {
+            content: "6/12"
+        }
+        .MK .team__bonus::after {
+            content: "4/36"
+        }
+        .MK .team__logo {
+            background-color: #9cadce
+        }
+        .MK {
+            order: 15
+        }
+        .MK .team__all-points::after{
+            content: "60"
+        }
+
+
+        .SA .team__score::after {
+            content: "43/120"
+        }
+        .SA .team__stations::after {
+            content: "6/12"
+        }
+        .SA .team__bonus::after {
+            content: "2/36"
+        }
+        .SA .team__logo {
+            background-color: #a2d2ff
+        }
+        .SA {
+            order: 20
+        }
+        .SA .team__all-points::after{
+            content: "45"
+        }
+        
+
+        .P .team__score::after {
+            content: "46/120"
+        }
+        .P .team__stations::after {
+            content: "7/12"
+        }
+        .P .team__bonus::after {
+            content: "4/36"
+        }
+        .P .team__logo {
+            background-color: #5d5b6a
+        }
+        .P {
+            order: 19
+        }
+        .P .team__all-points::after{
+            content: "50"
+        }
+
+
+        .R .team__score::after {
+            content: "70/120"
+        }
+        .R .team__stations::after {
+            content: "8/12"
+        }
+        .R .team__bonus::after {
+            content: "9/36"
+        }
+        .R .team__logo {
+            background-color: #ffafcc
+        }
+        .R {
+            order: 5
+        }
+        .R .team__all-points::after{
+            content: "79"
+        }
+
+
+
+        .HS .team__score::after {
+            content: "58/120"
+        }
+        .HS .team__stations::after {
+            content: "8/12"
+        }
+        .HS .team__bonus::after {
+            content: "12/36"
+        }
+        .HS .team__logo {
+            background-color: #efe9ae
+        }
+        .HS {
+            order: 9
+        }
+        .HS .team__all-points::after{
+            content: "70"
+        }
+
+        
+
+        .CE .team__score::after {
+            content: "72/120"
+        }
+        .CE .team__stations::after {
+            content: "8/12"
+        }
+        .CE .team__bonus::after {
+            content: "9/36"
+        }
+        .CE .team__logo {
+            background-color: #ff928b
+        }
+        .CE {
+            order: 4
+        }
+        .CE .team__all-points::after{
+            content: "81"
+        }
+
+
+        .PP .team__score::after {
+            content: "46/120"
+        }
+        .PP .team__stations::after {
+            content: "6/12"
+        }
+        .PP .team__bonus::after {
+            content: "5/36"
+        }
+        .PP .team__logo {
+            background-color: #7ec4cf
+        }
+        .PP {
+            order: 17
+        }
+        .PP .team__all-points::after{
+            content: "51"
+        }
+
+        
+        .HW .team__score::after {
+            content: "83/120"
+        }
+        .HW .team__stations::after {
+            content: "10/12"
+        }
+        .HW .team__bonus::after {
+            content: "9/36"
+        }
+        .HW .team__logo {
+            background-color: #758184
+        }
+        .HW {
+            order: 0
+        }
+        .HW .team__all-points::after{
+            content: "92"
+        }
+
+
+        .KR .team__score::after {
+            content: "20/120"
+        }
+        .KR .team__stations::after {
+            content: "3/12"
+        }
+        .KR .team__bonus::after {
+            content: "0/36"
+        }
+        .KR .team__logo {
+            background-color: #ff8fab
+        }
+        .KR {
+            order: 25
+        }
+        .KR .team__all-points::after{
+            content: "20"
+        }
+        
+        
+        .CO .team__score::after {
+            content: "35/120"
+        }
+        .CO .team__stations::after {
+            content: "5/12"
+        }
+        .CO .team__bonus::after {
+            content: "3/36"
+        }
+        .CO .team__logo {
+            background-color: #ff6663
+        }
+        .CO {
+            order: 21
+        }
+        .CO .team__all-points::after{
+            content: "38"
+        }
+
+
+        .HV .team__score::after {
+            content: "75/120"
+        }
+        .HV .team__stations::after {
+            content: "9/12"
+        }
+        .HV .team__bonus::after {
+            content: "4/36"
+        }
+        .HV .team__logo {
+            background-color: #b8e0d2
+        }
+        .HV {
+            order: 6
+        }
+        .HV .team__all-points::after{
+            content: "79"
+        }
+
+
+        .BR .team__score::after {
+            content: "25/120"
+        }
+        .BR .team__stations::after {
+            content: "3/12"
+        }
+        .BR .team__bonus::after {
+            content: "0/36"
+        }
+        .BR .team__logo {
+            background-color: #e8d1c5
+        }
+        .BR {
+            order: 22
+        }
+        .BR .team__all-points::after{
+            content: "25"
+        }
+
+
+        .CA .team__score::after {
+            content: "67/120"
+        }
+        .CA .team__stations::after {
+            content: "8/12"
+        }
+        .CA .team__bonus::after {
+            content: "7/36"
+        }
+        .CA .team__logo {
+            background-color: #ffc8dd
+        }
+        .CA {
+            order: 7
+        }
+        .CA .team__all-points::after{
+            content: "74"
+        }
+
+        .SP .team__score::after {
+            content: "75/120"
+        }
+        .SP .team__stations::after {
+            content: "9/12"
+        }
+        .SP .team__bonus::after {
+            content: "7/36"
+        }
+        .SP .team__logo {
+            background-color: #f6bc66
+        }
+        .SP {
+            order: 3
+        }
+        .SP .team__all-points::after{
+            content: "82"
+        }
+
+
+        .HO .team__score::after {
+            content: "20/120"
+        }
+        .HO .team__stations::after {
+            content: "3/12"
+        }
+        .HO .team__bonus::after {
+            content: "0/36"
+        }
+        .HO .team__logo {
+            background-color: #637042
+        }
+        .HO {
+            order: 27
+        }
+        .HO .team__all-points::after{
+            content: "20"
+        }
+
+        
+        
