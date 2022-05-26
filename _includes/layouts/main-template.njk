@@ -24,7 +24,7 @@
     <!-- Icons -->
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
      -->
-    <title>Impressum</title>
+    <title>{{title}}</title>
 </head>
 <body>
 
@@ -38,39 +38,19 @@
                 <a href="/"><h1 class="header__title">Anna & Lorenz</h1></a>
             </div>
             
-            <nav class="menu">
-    <a class="menu__items" href="/#id_info">Info</a>
-    <a class="menu__items" href="/#id_stations">Stationen</a> 
-    <a class="menu__items" href="/#id_teams">Teams</a> 
-    <a class="menu__items" href="/#id_results">Ergebnisse</a>
-    <a class="menu__items" href="/galerie/">Galerie</a>
-</nav>
+            {% include "partials/menu.njk"  %}
             
         </header>
          <!-- END: Header -->
 
         
         <!-- START: Content -->
-        
+        {{content|safe}}
         <!-- END: Content -->
 
 
         <!-- START: Footer -->
-        <footer class="footer">
-    <p class="footer__copyright">©Anna&Lorenz</p>
-
-    <div class="footer__thanks">
-        <p class="footer__text">Viel Spaß bei der Rätselrallye - tobt euch aus, </p>
-        <p class="footer__text">lernt euch kennen</p>  
-        <p class="footer__text">und feiert das Leben &#9825; </p>
-
-    </div>
-
-    <div class="footer__designers">
-        <p class="footer__designer">Webpage developed and designed by<a href="https://brodsa.github.io/curriculum_vitae/"> Sarka Grubner</a></p>
-        <p class="footer__designer">Background image designed by <a href="http://www.freepik.com">Harryarts / Freepik</a></p>
-    </div>
-</footer>
+        {% include "partials/footer.njk" %}
         <!-- END: Footer -->
     
 
