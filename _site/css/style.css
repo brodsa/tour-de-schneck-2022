@@ -338,6 +338,9 @@ body{
     margin-bottom: 0;
 }
 
+.M, .CH, .KR, .V, .HO {
+    display: none;
+}
 
 
 /* ************** FOOTER ************************ */

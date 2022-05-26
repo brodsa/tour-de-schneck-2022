@@ -2,3 +2,5 @@
 forms-tour-de-schneck-7a82ceba1539.json
 __side/
 node_modules/
+.vscode/
+__pycache__/
