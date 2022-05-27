@@ -4,3 +4,4 @@ __side/
 node_modules/
 .vscode/
 __pycache__/
+pip/
