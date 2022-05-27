@@ -1,0 +1,7 @@
+@use '../base';
+
+.form {
+    & .section {
+        padding-top: calc(base.$spacer-big * 3);
+    }
+}

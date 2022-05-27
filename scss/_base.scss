@@ -1,0 +1,49 @@
+html {
+    box-sizing: border-box;
+}
+  
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+// fonts
+$font-primary: "Raleway", sans-serif;
+$font-secondary: "Caveat Brush", cursive;
+
+
+// colors
+$color-primary: #972906 ;
+$color-primary-light: #F0E2E1;
+$color-secondary-light:#F1EFDB;
+$color-secondary: #404A3C;
+$white: #fcfcfc;
+
+
+// spaces
+$spacer-big: 80px;
+$spacer-small: 20px;
+
+
+// mixin
+@mixin tablet{
+    @media screen and (min-width: 768px){
+        @content;
+    }    
+}
+
+@mixin notebook{
+    @media screen and (min-width: 1048px){
+        @content;
+    }    
+}
+
+
+
+body {
+    margin: 0;
+    font-family: $font-primary;
+}
+
+::placeholder {
+    color: $color-secondary;
+  }

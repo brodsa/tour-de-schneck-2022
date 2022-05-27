@@ -1,0 +1,106 @@
+@use '../base';
+
+.section {
+    padding-top: base.$spacer-big;
+    padding-bottom: base.$spacer-big;
+ 
+  
+  &__header {
+    margin-bottom: calc(base.$spacer-big / 2);
+  }
+  
+  &__title {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: base.$font-secondary;
+    font-size: 40px;
+    color: base.$color-primary;
+  }
+  
+  &__title::after,
+  &__title::before {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 200px;
+    background-color: base.$color-primary;
+    margin: base.$spacer-small auto;
+    background: linear-gradient(to left, base.$white, base.$color-primary, base.$white);
+  }
+  
+  &__content {
+    margin: 0 base.$spacer-small;
+  }
+  
+  &__subtitle {
+    color: base.$color-primary;
+    text-align: center;
+    margin-top: base.$spacer-small;
+    margin-bottom: base.$spacer-small;
+  }
+  
+  &__text {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  &__text--emp {
+    margin-top: calc(base.$spacer-big/ 2);
+    color: base.$color-primary;
+    font-weight: bold;
+  }
+  
+  &__text--margin-bottom {
+    margin-bottom: base.$spacer-small;
+  }
+  
+  &__text--no-margin {
+    margin: 0;
+  }
+  
+  &__paragraph {
+    padding: calc(base.$spacer-big/ 2);
+    margin: calc(base.$spacer-big / 2);
+    padding-top: base.$spacer-small;
+  }
+  
+  &__paragraph--background {
+    background-color: base.$color-primary-light;
+    border-radius: 40px;
+  }
+
+  @include base.tablet{  
+    
+    &__paragraph {
+      margin: 0;
+    }
+  }
+
+  @include base.notebook{
+
+    &__title::after,
+    &__title::before {
+      content: "";
+      display: inline-block;
+      height: 4px;
+      width: 200px;
+      margin-bottom: 0.5rem;
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+  
+    &__title::after {
+      background: linear-gradient(to right, base.$color-primary, base.$white);
+    }
+  
+    &__title::before {
+      background: linear-gradient(to left, base.$color-primary, base.$white);
+    }
+
+
+  }
+
+
+}

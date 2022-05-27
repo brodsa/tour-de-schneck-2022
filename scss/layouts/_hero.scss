@@ -1,0 +1,37 @@
+@use '../base';
+
+.hero {
+    height: 500px;
+    background-image: url("/images/mia.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 35%;
+    background-attachment: fixed;
+    color: base.$white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+  
+  &__text {
+    display: block;
+    padding: 300px 0 50px 0;
+    background: linear-gradient(to top, rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0));
+  }
+  
+  &__title,
+  &__subtitle {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  &__title {
+    font-size: 26px;
+  }
+
+  @include base.tablet{
+    height: 700px;
+  }
+
+}

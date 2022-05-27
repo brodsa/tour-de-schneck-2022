@@ -1,0 +1,71 @@
+@use '../base';
+
+.footer {
+
+    background-color: base.$color-primary;
+    color: base.$white;
+    padding: 0 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+ 
+  
+  &:hover {
+    background-color: base.$color-secondary;
+  }
+  
+  &__copyright {
+    margin: 0;
+  }
+  
+  &__designer {
+    font-size: 12px;
+    text-align: center;
+  }
+  
+  &__designers > :last-child {
+    font-size: 10px;
+  }
+  
+  &__designer a {
+    color: base.$white;
+  }
+  
+  &__thanks {
+    text-align: center;
+    padding: 0;
+    margin: 20px 0;
+    order: -1;
+  }
+  
+  &__text {
+    margin: 0;
+  }
+
+  @include base.notebook{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+
+
+    &__copyright,
+    &__designers {
+      flex: 0 1 20%;
+    }
+
+    &__thanks {
+      order: 0;
+    }
+
+    &__designer {
+      text-align: right;
+    }
+
+  }
+
+}

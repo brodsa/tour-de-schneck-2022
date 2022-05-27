@@ -1,0 +1,44 @@
+@use '../base';
+
+.menu {
+    display: flex;
+    justify-content: center;
+    margin: 0 20px 10px 20px;
+    column-gap: base.$spacer-small;
+ 
+  &__items {
+    display: inline-block;
+    text-align: center;
+    padding: 5px 10px;
+    margin: 5px 0;
+    border: 0;
+    background-color: base.$color-primary;
+    color: base.$color-primary-light;
+    border-radius: 20px;
+    text-decoration: none;
+    flex: 1 1 50%;
+  }
+  
+  &__items:hover,
+  &__items:focus,
+  &__items:active {
+    background-color: base.$color-secondary;
+    color: base.$white;
+    padding: 5px 10px;
+    margin: 5px 0;
+    transform: scale(1.1);
+  }
+
+  @include base.notebook{
+    margin: 0;
+  
+    &__items,
+    &__items:hover,
+    &__items:active,
+    &__items:focus {
+      padding: 5px base.$spacer-big;
+    }
+
+  }
+    
+}

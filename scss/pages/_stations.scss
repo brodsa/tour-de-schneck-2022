@@ -1,0 +1,122 @@
+@use '../base';
+
+.stations{
+
+    &-map,
+    &-map__img {
+      display: none;
+    }
+
+    & .section__title {
+      color: base.$color-secondary;
+    }
+      
+    & .section__title::after,
+    & .section__title::before {
+      background-color: base.$color-secondary;
+      margin: base.$spacer-small auto;
+      background: linear-gradient(to left, base.$color-secondary-light, base.$color-secondary, base.$color-secondary-light);
+    }
+
+    @include base.tablet{
+
+      &__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: base.$spacer-big;
+        margin-right: base.$spacer-big;
+      }
+    }
+
+    @include base.notebook{
+
+      & .section__content {
+        width: 80%;
+        margin: auto;
+      }
+
+      &__list {
+        margin: 0;
+      }
+
+      & .section__title::after,
+      & .section__title::before {
+        content: "";
+        display: inline-block;
+        height: 4px;
+        width: 200px;
+        margin-bottom: 0.5rem;
+        margin-left: 40px;
+        margin-right: 40px;
+      }
+      
+      & .section__title::after {
+        background: linear-gradient(to right, base.$color-secondary, base.$color-secondary-light);
+      }
+      
+      & .section__title::before {
+        background: linear-gradient(to left, base.$color-secondary, base.$color-secondary-light);
+      }
+    }
+
+}
+
+
+.station{
+
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin: 20px 20px 0px 20px;
+    padding: 35px 0 20px 0;
+    background-color: base.$color-secondary-light;
+    box-shadow: 0 0 10px 2px rgba(1, 1, 1, 0.2);
+
+    &__logo {
+      flex: 1 1 20%;
+      padding: 0 20px;
+      fill: base.$color-secondary;
+      box-sizing: content-box;
+    }
+
+    &__text {
+      flex: 1 1 80%;
+      padding-right: 20px;
+      text-align: left;
+    }
+
+    &__desc,
+    &__loc {
+      display: none;
+    }
+
+    &__name {
+      margin: 0;
+      padding: 0;
+      padding-left: 4px;
+    }
+      
+    &__info p {
+      margin: 0;
+      padding: 0;
+    }
+      
+
+    @include base.tablet{
+        margin: 0;
+        margin-top: base.$spacer-small;
+        flex: 0 0 calc((100% - base.$spacer-small) / 2);
+    }
+
+    @include base.notebook{
+      margin-top: 10px;
+      flex: 0 0 calc((100% - 30px) / 3);
+   
+      &__desc,
+      &__loc {
+        display: inline;
+      }
+    }
+}

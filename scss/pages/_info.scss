@@ -1,0 +1,53 @@
+@use '../base';
+
+.info{
+  &__content > :last-child {
+    margin-top: calc(base.$spacer-big/ 2);
+  }
+
+  @include base.tablet{
+
+    &__content {
+      margin-left: base.$spacer-big;
+      margin-right: base.$spacer-big;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(6, auto);
+      gap: base.$spacer-small;
+    }
+  
+    &__leading {
+      grid-row: 1/2;
+      grid-column: 1/-1;
+    }
+  
+    &__points {
+      grid-row: 2/3;
+      grid-column: 2/3;
+    }
+  
+    &__reward {
+      grid-row: 3/4;
+      grid-column: 1/2;
+    }
+  
+    &__warning {
+      grid-row: 4/5;
+      grid-column: 2/3;
+    }
+  
+    &__fotos {
+      grid-row: 5/6;
+      grid-column: 1/2;
+    }
+  
+    &__greetings {
+      grid-row: 6/7;
+      grid-column: 1/-1;
+    }
+  
+
+
+  }
+
+}

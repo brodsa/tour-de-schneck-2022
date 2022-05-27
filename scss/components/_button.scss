@@ -1,0 +1,48 @@
+@use '../base';
+
+  
+.button {
+    display: block;
+    border: 0;
+    border-radius: 20px;
+    padding: 5px 20px;
+    font-family: base.$font-primary;
+    margin: calc(base.$spacer-small/ 2) auto 0 auto;
+    cursor: pointer;
+ 
+  
+  &--primary {
+    background-color: base.$color-primary;
+  }
+  
+  &--primary:hover,
+  &--primary:active {
+    background-color: base.$color-secondary;
+    transform: scale(1.1);
+  }
+  
+  &__link {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-size: 14px;
+    color: base.$white;
+  }
+  
+  &--center {
+    text-align: center;
+  }
+
+  &--secondary {
+    background-color: base.$color-secondary;
+    color: base.$color-secondary-light;
+  }
+  
+  &--secondary:hover,
+  &--secondary:active {
+    background-color: base.$color-primary;
+    color: base.$color-primary-light;
+    transform: scale(1.1);
+  }
+
+}
