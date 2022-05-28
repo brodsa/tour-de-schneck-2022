@@ -2,7 +2,8 @@
 
 .footer {
 
-    background-color: base.$color-primary;
+  background: linear-gradient(to left, base.$color-secondary, base.$color-primary);
+    
     color: base.$white;
     padding: 0 20px;
     margin-top: 20px;
@@ -13,9 +14,6 @@
     font-size: 14px;
  
   
-  &:hover {
-    background-color: base.$color-secondary;
-  }
   
   &__copyright {
     margin: 0;

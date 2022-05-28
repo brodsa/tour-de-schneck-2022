@@ -67,7 +67,7 @@
   }
   
   &__paragraph--background {
-    background-color: base.$color-primary-light;
+    background: linear-gradient(to right top, base.$color-secondary-light, base.$color-primary-light);
     border-radius: 40px;
   }
 

@@ -4,15 +4,12 @@
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: base.$color-primary-light;
+    background: linear-gradient(to right, base.$color-secondary-light, base.$color-primary-light);
+    // background-color: base.$color-primary-light;
     z-index: 100;
     padding-top: base.$spacer-small;
     padding-bottom: base.$spacer-small;
  
-  
-    &:hover {
-        background-color: base.$color-secondary-light;
-    }
     
     &__logo {
         margin-bottom:base.$spacer-small;
@@ -42,6 +39,10 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+
+        &__logo{
+            margin:0;
+        }
     
         &__title {
             display: inline;
