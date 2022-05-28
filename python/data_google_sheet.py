@@ -17,15 +17,12 @@ df_original = pd.DataFrame(list_of_dicts)
 worksheet_color = sh.worksheet("Stationsübersicht")
 color_list = worksheet_color.get_all_records()
 color_df = pd.DataFrame(color_list)
-stations_df = color_df[["Stationen","Bezeichnung","Ort","svg"]].iloc[0:12]
-print(stations_df)
+stations_df = color_df[["Stationen","Bezeichnung","Ort","svg_station","id_station"]].iloc[0:12]
 stations_df["Station"] = stations_df["Stationen"]
 
 # Data summary for teams and stations
 df_tmp = df_original.groupby(["Team", "Station"]).last().reset_index()
 df = df_tmp[["Team", "Station", "Score", "Originelle_Zusatzpunkte"]].drop_duplicates().dropna()
-print(df[df["Team"]=="Hohe Wand"])
-print(df[df["Team"]=="Ötscher"])
 df_color = color_df[["Gruppennamen","short","color"]].dropna().iloc[0:28]
 df_color["Gruppe"] = df_color["Gruppennamen"]
 all_teams = df_color["Gruppe"]
@@ -59,21 +56,23 @@ df_team.sort_values(by=['w_points'], inplace=True, ascending=False)
 df_team['order'] = list(range(df_team.shape[0]))
 df_team["order"] = df_team.apply(lambda x: int(x["order"]), axis=1)
 
-dict_team = {}
+
+# write json for teams
+dict_team = []
 for index, row in df_team.iterrows():
     dict_pre = dict()
-    team_name = row["Gruppe"]
+    dict_pre["name"] = row["Gruppe"]
     dict_pre["id"] = row["short"]
     dict_pre["score"] = row["w_score"]
     dict_pre["bonus"] = row["w_bonus"]
     dict_pre["points"] = row["w_points"]
     dict_pre["station_done"] = row["w_station_done"]
 
-    dict_team[team_name] = dict_pre
+    dict_team.append(dict_pre)
 
 
-with open('_data/teams.json','w',encoding='iso-8859-1') as file:
-    json.dump([dict_team], file) 
+with open('_data/teams.json','w',encoding='utf-8') as file:
+    json.dump(dict_team, file, indent=2, ensure_ascii=False) 
 
 
 # stations
@@ -91,19 +90,24 @@ df_station["w_teams_done"] = df_station.apply(lambda x: str(x["teams_done"]) + '
 df_station["station"] = df_station.apply(lambda x: str(x["Station"])[-1],axis=1)
 df_station.index = df_station["station"]
 
-dict_station = {}
+
+# write json for stations
+dict_station = list()
 for index, row in df_station.iterrows():
     dict_pre = dict()
-    station_name = row["Station"]
+    dict_pre["name"] = row["Station"]
     dict_pre["id"] = row["station"]
     dict_pre["teams"] = row["w_teams_done"]
-    dict_pre["svg"] = row["svg"]
+    dict_pre["description"] = row["Bezeichnung"]
+    dict_pre["location"] = row["Ort"]
+    dict_pre["svg"] = row["svg_station"]
 
-    dict_station[station_name] = dict_pre
+
+    dict_station.append(dict_pre)
 
 
-with open('_data/stations.json','w',encoding='utf') as file:
-    json.dump([dict_station], file) 
+with open('_data/stations.json','w',encoding='utf-8') as file:
+    json.dump(dict_station, file, indent=2, ensure_ascii=False) 
 
 
 # Example to display

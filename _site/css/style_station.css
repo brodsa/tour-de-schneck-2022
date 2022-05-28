@@ -1,50 +1,50 @@
 
-        .A .station__teams::after {
-            content: "28/28"
+        .A  {
+            order: 1;
         }
         
-        .B .station__teams::after {
-            content: "17/28"
+        .B {
+            order: 2;
         }
 
-        .C .station__teams::after {
-            content: "12/28"
+        .C {
+            order: 3;
         }
 
-        .D .station__teams::after {
-            content: "7/28"
+        .D {
+            order: 4;
         }
 
-        .E .station__teams::after {
-            content: "14/28"
+        .E {
+            order: 5;
         }
 
-        .F .station__teams::after {
-            content: "27/28"
+        .F {
+            order: 6;
         }
 
-        .G .station__teams::after {
-            content: "9/28"
+        .G {
+            order: 7;
         }
 
-        .H .station__teams::after {
-            content: "11/28"
+        .H {
+            order: 8;
         }
 
-        .I .station__teams::after {
-            content: "16/28"
+        .I {
+            order: 9;
         }
 
-        .J .station__teams::after {
-            content: "6/28"
+        .J {
+            order: 10;
         }
 
-        .K .station__teams::after {
-            content: "27/28"
+        .K {
+            order: 11;
         }
 
-        .L .station__teams::after {
-            content: "10/28"
+        .L {
+            order: 12;
         }
 
         

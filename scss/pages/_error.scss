@@ -3,9 +3,7 @@
 
 .error{
    
-    & .section {
-      padding-top: calc(base.$spacer-big * 3);
-    }
+   padding-top: 100px;
     
     &__message {
       text-align: center;
@@ -16,10 +14,22 @@
     &__img {
       width: 40%;
       height: 200px;
-      -o-object-fit: cover;
-         object-fit: cover;
+      object-fit: cover;
       display: block;
-      margin: 20px auto;
+      margin: base.$spacer-small auto;
+    }
+
+    @include base.tablet{
+      &__img {
+        width: 50%;
+        height: 400px;
+      }
+    }
+
+    @include base.notebook{
+      &__img {
+        height: 500px;
+      }
     }
   
   }

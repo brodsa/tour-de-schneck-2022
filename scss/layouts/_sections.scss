@@ -61,8 +61,8 @@
   }
   
   &__paragraph {
-    padding: calc(base.$spacer-big/ 2);
-    margin: calc(base.$spacer-big / 2);
+    padding: calc(base.$spacer-big/ 3);
+    margin: calc(base.$spacer-big / 3);
     padding-top: base.$spacer-small;
   }
   
@@ -79,6 +79,9 @@
   }
 
   @include base.notebook{
+
+    padding-left: 10%;
+    padding-right: 10%;
 
     &__title::after,
     &__title::before {
@@ -98,6 +101,7 @@
     &__title::before {
       background: linear-gradient(to left, base.$color-primary, base.$white);
     }
+
 
 
   }

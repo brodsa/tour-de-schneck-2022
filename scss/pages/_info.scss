@@ -5,6 +5,12 @@
     margin-top: calc(base.$spacer-big/ 2);
   }
 
+  &__greetings{
+    padding-bottom: 0;
+  }
+
+ 
+
   @include base.tablet{
 
     &__content {
@@ -12,7 +18,7 @@
       margin-right: base.$spacer-big;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(6, auto);
+      grid-template-rows: repeat(4, auto);
       gap: base.$spacer-small;
     }
   
@@ -23,31 +29,37 @@
   
     &__points {
       grid-row: 2/3;
+      grid-column: 1/2;
+    }
+  
+    &__fotos  {
+      grid-row: 2/3;
       grid-column: 2/3;
     }
   
-    &__reward {
+    &__warning {
       grid-row: 3/4;
       grid-column: 1/2;
     }
   
-    &__warning {
-      grid-row: 4/5;
+    &__reward{
+      grid-row: 3/4;
       grid-column: 2/3;
     }
   
-    &__fotos {
-      grid-row: 5/6;
-      grid-column: 1/2;
-    }
-  
     &__greetings {
-      grid-row: 6/7;
+      grid-row: 4/5;
       grid-column: 1/-1;
     }
-  
 
 
+  }
+
+  @include base.notebook{
+    & .section{
+      padding-left: 15%;
+      padding-right: 15%;
+    }
   }
 
 }

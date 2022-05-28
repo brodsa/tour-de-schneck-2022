@@ -4,52 +4,52 @@ from data_google_sheet import df_station
 with open("./css/style_station.css", "w") as f_station:
     f_station.write(
         f"""
-        .A .station__teams::after {{
-            content: \"{df_station.loc["A","w_teams_done"]}\"
+        .A  {{
+            order: {df_station.loc["A","id_station"]};
         }}
         
-        .B .station__teams::after {{
-            content: \"{df_station.loc["B","w_teams_done"]}\"
+        .B {{
+            order: {df_station.loc["B","id_station"]};
         }}
 
-        .C .station__teams::after {{
-            content: \"{df_station.loc["C","w_teams_done"]}\"
+        .C {{
+            order: {df_station.loc["C","id_station"]};
         }}
 
-        .D .station__teams::after {{
-            content: \"{df_station.loc["D","w_teams_done"]}\"
+        .D {{
+            order: {df_station.loc["D","id_station"]};
         }}
 
-        .E .station__teams::after {{
-            content: \"{df_station.loc["E","w_teams_done"]}\"
+        .E {{
+            order: {df_station.loc["E","id_station"]};
         }}
 
-        .F .station__teams::after {{
-            content: \"{df_station.loc["F","w_teams_done"]}\"
+        .F {{
+            order: {df_station.loc["F","id_station"]};
         }}
 
-        .G .station__teams::after {{
-            content: \"{df_station.loc["G","w_teams_done"]}\"
+        .G {{
+            order: {df_station.loc["G","id_station"]};
         }}
 
-        .H .station__teams::after {{
-            content: \"{df_station.loc["H","w_teams_done"]}\"
+        .H {{
+            order: {df_station.loc["H","id_station"]};
         }}
 
-        .I .station__teams::after {{
-            content: \"{df_station.loc["I","w_teams_done"]}\"
+        .I {{
+            order: {df_station.loc["I","id_station"]};
         }}
 
-        .J .station__teams::after {{
-            content: \"{df_station.loc["J","w_teams_done"]}\"
+        .J {{
+            order: {df_station.loc["J","id_station"]};
         }}
 
-        .K .station__teams::after {{
-            content: \"{df_station.loc["K","w_teams_done"]}\"
+        .K {{
+            order: {df_station.loc["K","id_station"]};
         }}
 
-        .L .station__teams::after {{
-            content: \"{df_station.loc["L","w_teams_done"]}\"
+        .L {{
+           order: {df_station.loc["L","id_station"]};
         }}
 
         """ )

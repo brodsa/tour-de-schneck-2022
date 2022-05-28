@@ -1,0 +1,49 @@
+---
+layout: layouts/main-template.njk
+title: Stationen
+---
+
+        <!-- START: Stations -->
+        <section class="stations" id="id_stations">
+            <div class="section">
+                
+                <div class="section__header" data-aos="flip-left">
+                    <h2 class="section__title">Stationen</h2>
+                </div>
+
+                <div class="section__content">
+                    
+                    <div class="stations-map" data-aos="fade-up">
+                        <img class="stations-map__img" src="/images/Karte_Tour_de_Schneck.jpg" alt="">
+                    </div>
+
+                    
+                    <div class="stations__list">
+
+                        {% for station in stations %}
+
+                            <div class="station {{ station.id }}" data-aos="fade-up">
+                                <svg class="station__logo" viewBox="0 0 512 512" widht="40" height="40">
+                                    <path d="{{ station.svg }}"/>
+                                </svg>
+                                <div class="station__text">                    
+                                    <h3 class="station__name">{{ station.name}}</h3>
+                                    <table class="station__info">
+                                        <tr><td><p class="station__desc">{{ station.description}} </p></td></tr>
+                                        <tr><td><p class="station__loc">Standort: {{ station.location }} </p></td></tr>
+                                        <tr><td><p class="station__teams">Teams: {{ station.teams }}</p></td></tr>
+                                    </table>  
+                                </div> 
+                            </div>
+
+                        {% endfor %}
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+ 
