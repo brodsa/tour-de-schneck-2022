@@ -227,6 +227,7 @@ body {
   margin-top: 40px;
   color: #972906;
   font-weight: bold;
+  font-size: 18px;
 }
 .section__text--margin-bottom {
   margin-bottom: 20px;
@@ -536,7 +537,7 @@ body {
   }
 }
 
-.M, .CH, .KR, .V, .HO {
+.M, .CH, .KR, .V {
   display: none;
 }
 
