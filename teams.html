@@ -20,8 +20,9 @@ title: Teams
                     <div class="teams__list">
 
                         {% for team in teams %}
-                            <div class="team {{ team.id} }"  data-aos="fade-up">
-                                <h1 class="team__logo"> {{ team.short_name }}</h1>
+
+                            <div class="team {{ team.id }}"  data-aos="fade-up">
+                                <h1 class="team__logo"> {{ team.name_short }}</h1>
                                 <h3 class="team_name">{{ team.name }}</h3>
                                 <table class="team__results">
                                     <tr><td><p class="team__info team__all-points">Gesamtpunkte: {{ team.points }}</p></td></tr> 
@@ -30,7 +31,9 @@ title: Teams
                                     <tr><td><p class="team__info team__stations">Stationen:{{ team.station_done }}</p></td></tr>
                                 </table>
                             </div>
-                        {% endfor %}                        
+
+                        {% endfor %}  
+
                     </div>
 
                 </div>
