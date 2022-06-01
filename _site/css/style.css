@@ -52,7 +52,7 @@ body {
   margin: 0;
   padding: 0;
 }
-@media screen and (min-width: 1048px) {
+@media screen and (min-width: 1248px) {
   .header {
     display: flex;
     justify-content: space-around;
@@ -82,7 +82,7 @@ body {
   border: 0;
   background-color: #972906;
   color: #F0E2E1;
-  border-radius: 20px;
+  border-radius: 5px;
   text-decoration: none;
   flex: 1 1 50%;
 }
@@ -93,7 +93,7 @@ body {
   margin: 5px 0;
   transform: scale(1.1);
 }
-@media screen and (min-width: 1048px) {
+@media screen and (min-width: 1248px) {
   .menu {
     margin: 0;
   }
@@ -166,7 +166,7 @@ body {
 .footer__text {
   margin: 0;
 }
-@media screen and (min-width: 1048px) {
+@media screen and (min-width: 1248px) {
   .footer {
     display: flex;
     flex-direction: row;
@@ -242,14 +242,14 @@ body {
 }
 .section__paragraph--background {
   background: linear-gradient(to right top, #F1EFDB, #F0E2E1);
-  border-radius: 40px;
+  border-radius: 8px;
 }
 @media screen and (min-width: 768px) {
   .section__paragraph {
     margin: 0;
   }
 }
-@media screen and (min-width: 1048px) {
+@media screen and (min-width: 1248px) {
   .section {
     padding-left: 10%;
     padding-right: 10%;
@@ -347,7 +347,7 @@ body {
     grid-column: 1/-1;
   }
 }
-@media screen and (min-width: 1048px) {
+@media screen and (min-width: 1248px) {
   .info .section {
     padding-left: 15%;
     padding-right: 15%;
@@ -356,6 +356,9 @@ body {
 
 .stations {
   padding-top: 100px;
+}
+.stations__list {
+  display: flex;
 }
 .stations-map, .stations-map__img {
   display: none;
@@ -370,7 +373,6 @@ body {
 }
 @media screen and (min-width: 768px) {
   .stations__list {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -378,7 +380,7 @@ body {
     margin-right: 80px;
   }
 }
-@media screen and (min-width: 1048px) {
+@media screen and (min-width: 1248px) {
   .stations .section__content {
     width: 80%;
     margin: auto;
@@ -419,11 +421,10 @@ body {
 .station {
   display: flex;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 8px;
   margin: 20px 20px 0px 20px;
   padding: 35px 0 20px 0;
   background-color: #F1EFDB;
-  box-shadow: 0 0 10px 2px rgba(1, 1, 1, 0.2);
 }
 .station__logo {
   flex: 1 1 20%;
@@ -455,7 +456,7 @@ body {
     flex: 0 0 calc((100% - 20px) / 2);
   }
 }
-@media screen and (min-width: 1048px) {
+@media screen and (min-width: 1248px) {
   .station {
     margin-top: 10px;
     flex: 0 0 calc((100% - 30px) / 3);
@@ -490,12 +491,11 @@ body {
 }
 
 .team {
-  border-radius: 10px;
+  border-radius: 8px;
   margin: 20px;
   padding: 20px;
   text-align: center;
   order: 100;
-  box-shadow: 0 0 10px 2px rgba(1, 1, 1, 0.2);
   background-color: #F0E2E1;
 }
 .team__name {
@@ -511,7 +511,6 @@ body {
   border: 2px solid #fcfcfc;
   font-family: "Caveat Brush", cursive;
   font-style: normal;
-  box-shadow: 0 0 30px 2px rgba(1, 1, 1, 0.5);
   background-color: gray;
   box-sizing: content-box;
 }
@@ -526,11 +525,11 @@ body {
 @media screen and (min-width: 768px) {
   .team {
     margin: 0;
-    margin-top: var(--spacer-small);
-    flex: 0 0 calc((100% - var(--spacer-small)) / 2);
+    margin-top: 20px;
+    flex: 0 0 calc((100% - 20px) / 2);
   }
 }
-@media screen and (min-width: 1048px) {
+@media screen and (min-width: 1248px) {
   .team {
     margin-top: 15px;
     flex: 0 0 calc((100% - 60px) / 4);
@@ -574,9 +573,9 @@ body {
     width: 60%;
   }
 }
-@media screen and (min-width: 1048px) {
+@media screen and (min-width: 1248px) {
   .login {
-    width: 50%;
+    width: 400px;
   }
 }
 
@@ -606,7 +605,7 @@ body {
     height: 400px;
   }
 }
-@media screen and (min-width: 1048px) {
+@media screen and (min-width: 1248px) {
   .error__img {
     height: 500px;
   }
