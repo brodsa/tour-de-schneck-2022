@@ -1,4 +1,7 @@
 import json
+import unidecode
+
+
 import gspread
 import pandas as pd
 
@@ -38,6 +41,7 @@ df_team_tmp["Score"] = df_team_tmp.apply(lambda x: int(x["Score"]), axis=1)
 df_team_tmp["Originelle_Zusatzpunkte"] = df_team_tmp.apply(lambda x: int(x["Originelle_Zusatzpunkte"]), axis=1)
 df_team_tmp["w_score"] = df_team_tmp.apply(lambda x: str(x["Score"]) + "/" + str(x["max_score"]),axis=1)
 df_team_tmp["w_bonus"] = df_team_tmp.apply(lambda x: str(x["Originelle_Zusatzpunkte"]) + "/" + str(3*12),axis=1)
+df_team_tmp["id_teams"] = df_team_tmp.apply(lambda x: unidecode.unidecode(x["short"]),axis=1)
 
 df_team_station = pd.DataFrame(df['Team'].value_counts())
 df_team_station["station_max"] = 12 
@@ -62,7 +66,8 @@ dict_team = []
 for index, row in df_team.iterrows():
     dict_pre = dict()
     dict_pre["name"] = row["Gruppe"]
-    dict_pre["id"] = row["short"]
+    dict_pre["id"] = row["id_teams"]
+    dict_pre["name_short"] = row["short"]
     dict_pre["score"] = row["w_score"]
     dict_pre["bonus"] = row["w_bonus"]
     dict_pre["points"] = row["w_points"]

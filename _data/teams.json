@@ -2,6 +2,7 @@
   {
     "name": "Hohe Wand",
     "id": "HW",
+    "name_short": "HW",
     "score": "83/120",
     "bonus": "9/36",
     "points": 92,
@@ -9,7 +10,8 @@
   },
   {
     "name": "Ötscher",
-    "id": "ÖT",
+    "id": "OT",
+    "name_short": "ÖT",
     "score": "82/120",
     "bonus": "5/36",
     "points": 87,
@@ -18,6 +20,7 @@
   {
     "name": "Schneeberg",
     "id": "SC",
+    "name_short": "SC",
     "score": "73/120",
     "bonus": "10/36",
     "points": 83,
@@ -26,6 +29,7 @@
   {
     "name": "Spittelberg",
     "id": "SP",
+    "name_short": "SP",
     "score": "75/120",
     "bonus": "7/36",
     "points": 82,
@@ -34,6 +38,7 @@
   {
     "name": "Cevedale",
     "id": "CE",
+    "name_short": "CE",
     "score": "72/120",
     "bonus": "9/36",
     "points": 81,
@@ -42,6 +47,7 @@
   {
     "name": "Rax",
     "id": "R",
+    "name_short": "R",
     "score": "70/120",
     "bonus": "9/36",
     "points": 79,
@@ -50,6 +56,7 @@
   {
     "name": "Hohe Veitsch",
     "id": "HV",
+    "name_short": "HV",
     "score": "75/120",
     "bonus": "4/36",
     "points": 79,
@@ -58,6 +65,7 @@
   {
     "name": "Castor",
     "id": "CA",
+    "name_short": "CA",
     "score": "67/120",
     "bonus": "7/36",
     "points": 74,
@@ -66,6 +74,7 @@
   {
     "name": "Dachstein",
     "id": "DS",
+    "name_short": "DS",
     "score": "68/120",
     "bonus": "6/36",
     "points": 74,
@@ -74,6 +83,7 @@
   {
     "name": "Hochschwab",
     "id": "HS",
+    "name_short": "HS",
     "score": "58/120",
     "bonus": "12/36",
     "points": 70,
@@ -82,6 +92,7 @@
   {
     "name": "Großvenediger",
     "id": "GV",
+    "name_short": "GV",
     "score": "59/120",
     "bonus": "10/36",
     "points": 69,
@@ -89,7 +100,8 @@
   },
   {
     "name": "Göller",
-    "id": "GÖ",
+    "id": "GO",
+    "name_short": "GÖ",
     "score": "60/120",
     "bonus": "7/36",
     "points": 67,
@@ -98,6 +110,7 @@
   {
     "name": "Ortler",
     "id": "O",
+    "name_short": "O",
     "score": "61/120",
     "bonus": "5/36",
     "points": 66,
@@ -106,6 +119,7 @@
   {
     "name": "Zufallspitze",
     "id": "Z",
+    "name_short": "Z",
     "score": "60/120",
     "bonus": "5/36",
     "points": 65,
@@ -114,6 +128,7 @@
   {
     "name": "Dufourspitze",
     "id": "DU",
+    "name_short": "DU",
     "score": "55/120",
     "bonus": "8/36",
     "points": 63,
@@ -122,6 +137,7 @@
   {
     "name": "Mittagskogel",
     "id": "MK",
+    "name_short": "MK",
     "score": "56/120",
     "bonus": "4/36",
     "points": 60,
@@ -130,6 +146,7 @@
   {
     "name": "Glockturm",
     "id": "GL",
+    "name_short": "GL",
     "score": "53/120",
     "bonus": "4/36",
     "points": 57,
@@ -138,6 +155,7 @@
   {
     "name": "Piz Palü",
     "id": "PP",
+    "name_short": "PP",
     "score": "46/120",
     "bonus": "5/36",
     "points": 51,
@@ -146,6 +164,7 @@
   {
     "name": "Großglockner",
     "id": "GG",
+    "name_short": "GG",
     "score": "43/120",
     "bonus": "7/36",
     "points": 50,
@@ -154,6 +173,7 @@
   {
     "name": "Pisco",
     "id": "P",
+    "name_short": "P",
     "score": "46/120",
     "bonus": "4/36",
     "points": 50,
@@ -162,6 +182,7 @@
   {
     "name": "Schneealpe",
     "id": "SA",
+    "name_short": "SA",
     "score": "43/120",
     "bonus": "2/36",
     "points": 45,
@@ -170,6 +191,7 @@
   {
     "name": "Cobenzel",
     "id": "CO",
+    "name_short": "CO",
     "score": "35/120",
     "bonus": "3/36",
     "points": 38,
@@ -178,6 +200,7 @@
   {
     "name": "Breithorn",
     "id": "BR",
+    "name_short": "BR",
     "score": "25/120",
     "bonus": "0/36",
     "points": 25,
@@ -186,6 +209,7 @@
   {
     "name": "Mönch",
     "id": "M",
+    "name_short": "M",
     "score": "20/120",
     "bonus": "0/36",
     "points": 20,
@@ -194,6 +218,7 @@
   {
     "name": "Chachani",
     "id": "CH",
+    "name_short": "CH",
     "score": "20/120",
     "bonus": "0/36",
     "points": 20,
@@ -202,6 +227,7 @@
   {
     "name": "Kreuzeck",
     "id": "KR",
+    "name_short": "KR",
     "score": "20/120",
     "bonus": "0/36",
     "points": 20,
@@ -210,6 +236,7 @@
   {
     "name": "Vallunaraju",
     "id": "V",
+    "name_short": "V",
     "score": "20/120",
     "bonus": "0/36",
     "points": 20,
@@ -218,6 +245,7 @@
   {
     "name": "Hochstuhl",
     "id": "HO",
+    "name_short": "HO",
     "score": "20/120",
     "bonus": "0/36",
     "points": 20,
