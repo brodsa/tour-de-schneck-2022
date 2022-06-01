@@ -1,8 +1,11 @@
-*.bat
+git_update.bat
 forms-tour-de-schneck-7a82ceba1539.json
-__side/
+
+_side/
 node_modules/
 .vscode/
+
+# python
 __pycache__/
 pip/
 python/__pycache__/

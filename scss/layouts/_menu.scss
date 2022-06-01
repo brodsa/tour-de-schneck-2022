@@ -14,7 +14,7 @@
     border: 0;
     background-color: base.$color-primary;
     color: base.$color-primary-light;
-    border-radius: 20px;
+    border-radius: 5px;
     text-decoration: none;
     flex: 1 1 50%;
   }
@@ -31,7 +31,6 @@
 
   @include base.notebook{
     margin: 0;
-  
     &__items,
     &__items:hover,
     &__items:active,

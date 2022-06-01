@@ -3,6 +3,10 @@
 .stations{
     padding-top: 100px;
 
+    &__list{
+      display: flex;
+    }
+
     &-map,
     &-map__img {
       display: none;
@@ -22,7 +26,7 @@
     @include base.tablet{
 
       &__list {
-        display: flex;
+        
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -85,11 +89,11 @@
 
     display: flex;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 8px;
     margin: 20px 20px 0px 20px;
     padding: 35px 0 20px 0;
     background-color: base.$color-secondary-light;
-    box-shadow: 0 0 10px 2px rgba(1, 1, 1, 0.2);
+    // box-shadow: 0 0 10px 2px rgba(1, 1, 1, 0.2);
 
     &__logo {
       flex: 1 1 20%;

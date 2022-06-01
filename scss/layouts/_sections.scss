@@ -69,7 +69,7 @@
   
   &__paragraph--background {
     background: linear-gradient(to right top, base.$color-secondary-light, base.$color-primary-light);
-    border-radius: 40px;
+    border-radius: 8px;
   }
 
   @include base.tablet{  
