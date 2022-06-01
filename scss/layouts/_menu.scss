@@ -6,7 +6,7 @@
     margin: 0 20px 10px 20px;
     column-gap: base.$spacer-small;
  
-  &__items {
+  &__item {
     display: inline-block;
     text-align: center;
     padding: 5px 10px;
@@ -18,23 +18,24 @@
     text-decoration: none;
     flex: 1 1 50%;
   }
-  
-  &__items:hover,
-  &__items:focus,
-  &__items:active {
+
+  &__item--active,
+  &__item:hover,
+  &__item:focus,
+  &__item:active {
     background-color: base.$color-secondary;
     color: base.$white;
     padding: 5px 10px;
     margin: 5px 0;
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 
   @include base.notebook{
     margin: 0;
-    &__items,
-    &__items:hover,
-    &__items:active,
-    &__items:focus {
+    &__item,
+    &__item:hover,
+    &__item:active,
+    &__item:focus {
       padding: 5px base.$spacer-big;
     }
 

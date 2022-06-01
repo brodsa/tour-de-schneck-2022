@@ -7,5 +7,4 @@ node_modules/
 
 # python
 __pycache__/
-pip/
 python/__pycache__/
