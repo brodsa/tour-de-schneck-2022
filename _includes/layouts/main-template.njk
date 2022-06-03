@@ -1,84 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png?v=1.1">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png?v=1.1">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png?v=1.1">
-    <link rel="manifest" href="/favicon/site.webmanifest?v=1.1">
-    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg?v=1.1" color="#5bbad5">
-    <link rel="shortcut icon" href="/favicon/favicon.ico?v=1.1">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="/favicon/browserconfig.xml?v=1.1">
-    <meta name="theme-color" content="#ffffff">
-
-    <!-- START: CSS-Styles -->
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/style_station.css">
-    <link rel="stylesheet" href="/css/style_teams.css">
-    <!-- END: CSS-Styles -->
-
-    <!-- START: Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
-
-    <!-- CSS-Animation JS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+---
+layout: layouts\basic-template.njk 
+---
 
 
+{{content|safe}}
+
+<!-- START: Footer -->
+{% include "partials/footer.njk" %}
+<!-- END: Footer -->
 
 
-    <title>{{title}}</title>
-
-</head>
-<body>
-
-
-    <div class="wrapper">
-
-        <!-- START: Header -->
-        <header class="header">
-
-            <div class="header__logo">
-                <a href="/"><h1 class="header__title">Anna & Lorenz</h1></a>
-            </div>
-            
-            {% include "partials/menu.njk"  %}
-            
-        </header>
-         <!-- END: Header -->
-
-        
-        <!-- START: Content -->
-        {{content|safe}}
-        <!-- END: Content -->
-
-
-        <!-- START: Footer -->
-        {% include "partials/footer.njk" %}
-        <!-- END: Footer -->
-    
-
-    </div>
-
-
-    
-    <!-- START: Javasripts -->
-    
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-
-    <!-- END: Javasripts -->
-
-</body>
-
-</html>
+ 

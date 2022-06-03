@@ -4,39 +4,52 @@
     display: flex;
     justify-content: center;
     margin: 0 20px 10px 20px;
-    column-gap: base.$spacer-small;
+    column-gap: 5px;
+
+    background-color: gray;
  
   &__item {
     display: inline-block;
     text-align: center;
-    padding: 5px 10px;
-    margin: 5px 0;
+    padding: 10px;
     border: 0;
-    background-color: base.$color-primary;
-    color: base.$color-primary-light;
-    border-radius: 5px;
     text-decoration: none;
-    flex: 1 1 50%;
+    color: base.$white;
   }
 
   &__item--active,
   &__item:hover,
   &__item:focus,
   &__item:active {
-    background-color: base.$color-secondary;
-    color: base.$white;
-    padding: 5px 10px;
-    margin: 5px 0;
+    background-color: base.$color-primary;
+    color: black;
+    padding: 10px;
     transform: scale(1.05);
+    background: linear-gradient(to right top, base.$color-secondary-light, base.$color-primary-light);
+    
   }
+
+  @include base.tablet{
+    margin: 0;
+
+    &__item,
+    &__item--active,
+    &__item:hover,
+    &__item:focus,
+    &__item:active {
+      padding: 10px;
+
+  }
+}
 
   @include base.notebook{
     margin: 0;
+
     &__item,
     &__item:hover,
     &__item:active,
     &__item:focus {
-      padding: 5px base.$spacer-big;
+      padding: 10px;
     }
 
   }

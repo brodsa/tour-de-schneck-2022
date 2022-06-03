@@ -23,25 +23,36 @@ $white: #fcfcfc;
 $spacer-big: 80px;
 $spacer-small: 20px;
 
+// media sizes
+$media-netobook: 1200px;
+$media-tablet: 768px;
+
 
 // mixin
 @mixin tablet{
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: $media-tablet){
         @content;
     }    
 }
 
 @mixin notebook{
-    @media screen and (min-width: 1248px){
+    @media screen and (min-width: $media-netobook){
         @content;
     }    
 }
 
 
 
+
 body {
+
     margin: 0;
     font-family: $font-primary;
+
+    @include notebook{
+      max-width: $media-netobook - 100px;   
+    }
+   
 }
 
 ::placeholder {

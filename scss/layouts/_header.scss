@@ -1,34 +1,45 @@
 @use '../base';
 
 .header {
+    background-color: gray;
     position: fixed;
     top: 0;
     width: 100%;
-    background: linear-gradient(to right, base.$color-secondary-light, base.$color-primary-light);
-    // background-color: base.$color-primary-light;
     z-index: 100;
     padding-top: base.$spacer-small;
     padding-bottom: base.$spacer-small;
+
+    // new
+    &__img{
+      fill: base.$white;
+      height: 20px;
+    }
+
+    &__title {
+        font-size: 20px;
+        font-family: base.$font-primary;
+        padding: 0;
+        padding-top: base.$spacer-small;
+        margin: 0 auto;
+     }
  
     
     &__logo {
         margin-bottom:base.$spacer-small;
         text-align: center;
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+
     }
     
     &__logo a {
         text-decoration: none;
+        color: base.$white;
     }
     
-    &__title {
-        font-size: 50px;
-        font-family: base.$font-secondary;
-        padding: 0;
-        margin: 0 auto;
-        text-decoration: none;
-        color: base.$color-primary;
-     }
+ 
     
     &__subtitle {
         margin: 0;
@@ -36,17 +47,25 @@
     }
 
     @include base.notebook{
+        
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
+        padding: 20px 50px;
 
         &__logo{
             margin:0;
+            align-items: flex-end;
+            justify-content: space-between;
+            flex-direction: row;
         }
     
         &__title {
-            display: inline;
-            font-size: 50px;
+            display: flex;
+            font-size: 20px;
+            padding-left: base.$spacer-small;
+            text-decoration: none;
+            
         }
     
     }

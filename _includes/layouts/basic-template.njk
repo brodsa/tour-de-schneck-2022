@@ -35,7 +35,7 @@
 
 
 
-    <title>Form</title>
+    <title>{{title}}</title>
 
 </head>
 <body>
@@ -52,48 +52,14 @@
                 <a href="/"><h1 class="header__title">Tour-de-Schneck</h1></a>
             </div>
             
-            <nav class="menu">
-    <a class="menu__item  " href="/info/">Info</a>
-    <a class="menu__item " href="/stations/">Stationen</a> 
-    <a class="menu__item " href="/teams/">Teams</a> 
-</nav>
+            {% include "partials/menu.njk"  %}
             
         </header>
          <!-- END: Header -->
 
         
         <!-- START: Content -->
-        
-
-
-
-<section class="form" id="id_form">
-    <div class="section">  
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc4rfxP4x41eJiyHZBNSMRnNYxQguWSoEwnUs7AvDhvKIPBmg/viewform?embedded=true" width="100%" height="1200" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-    </div>
-
-</section>
-
-
-<!-- START: Footer -->
-<footer class="footer">
-    <p class="footer__copyright">©Anna&Lorenz</p>
-
-    <div class="footer__thanks">
-        <p class="footer__text">Viel Spaß bei der Rätselrallye - tobt euch aus, </p>
-        <p class="footer__text">lernt euch kennen</p>  
-        <p class="footer__text">und feiert das Leben &#9825; </p>
-
-    </div>
-
-    <div class="footer__designers">
-        <p class="footer__designer">Webpage developed by<a href="https://brodsa.github.io/curriculum_vitae/"> Sarka Grubner</a></p>
-    </div>
-</footer>
-<!-- END: Footer -->
-
-
- 
+        {{content|safe}}
         <!-- END: Content -->
 
 
