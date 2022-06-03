@@ -359,6 +359,8 @@ body {
 }
 .stations__list {
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 .stations-map, .stations-map__img {
   display: none;
@@ -373,7 +375,6 @@ body {
 }
 @media screen and (min-width: 768px) {
   .stations__list {
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-left: 80px;

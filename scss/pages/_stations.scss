@@ -5,6 +5,8 @@
 
     &__list{
       display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
     }
 
     &-map,
@@ -27,7 +29,6 @@
 
       &__list {
         
-        flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
         margin-left: base.$spacer-big;
